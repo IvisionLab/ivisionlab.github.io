@@ -1,0 +1,19 @@
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-dark" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered ">
+                <div class="column is-10-desktop is-12-mobile">    
+                    <p class="title is-2">{{ page.title }}</p>
+                    
+                    {% if page.published %}<!--adicionei-->
+                    <p class="subtitle is-5"><br/>Data: {{ page.date | date: "%d/%m/%Y" }}</p>
+                    {% endif %}
+                    <p class="subtitle is-3">{{ page.subtitle }}</p>
+                    {% if page.hero_link %}
+                        <a href="{{ page.hero_link | prepend: site.baseurl  }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

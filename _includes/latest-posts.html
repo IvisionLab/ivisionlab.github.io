@@ -1,0 +1,16 @@
+<p class="title is-4">Workshop mais recente</p>
+
+
+<div class="columns is-multiline" >
+    {% for post in site.posts limit:1 %}
+    <div class="column is-12">
+        {% include post-card-head.html %}
+    </div>
+    {% endfor %}
+    <div class="column is-12">
+    <a class="button is-medium is-link is-fullwidth" href="{{ site.baseurl }}/workshops/">Lista completa de workshops</a>
+</div>
+</div>
+
+
+

@@ -1,0 +1,58 @@
+
+<footer class="footer" style="background-color:#00193a;">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-10-desktop is-centered">
+            <!--
+            {% for item in site.data[site.footer_menu] %}
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="{{ item.link | prepend: site.baseurl }}" class="link">{{ item.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+            -->
+            <div class="column is-2">
+                <!-- <p class="title is-4" style="color:whitesmoke;"> <br/></p> -->
+
+                <p class="title is-5" style="color:whitesmoke;">Contato</p>
+
+                <p style="color:whitesmoke;" >
+                    <a style="text-decoration: none; color: inherit;" href="tel:+557132839472"><i class="fa fa-phone" style="font-size:15px"></i></a>
+                    +55 71 3283-9472
+                </p>
+                <p style="color:whitesmoke;">
+                    <a style="text-decoration: none; color: inherit;" href="mailto:lrebouca@ufba.br"><i class="fa fa-envelope" style="font-size:15px"></i></a>
+                    Luciano Oliveira
+                </p>
+                <br/>
+            </div>
+
+            <div class="column is-2">
+                <p class="title is-5" style="color:whitesmoke;">Siga-nos!</p>
+                <p style="color:whitesmoke;">
+                    <a style="text-decoration: none;" href="https://www.facebook.com/labivision/" target="_blank">
+                        <i class="fab fa-facebook-f" style="font-size:30px;color:white"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://github.com/IvisionLab/" target="new">
+                        <i class="fab fa-github" style="font-size:30px;color:white"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="https://www.youtube.com/channel/UCmP_6GSoBFgTNHBM8ieKIAQ" target="new">
+                        <i class="fab fa-youtube" style="font-size:31px;color:white"></i>
+                    </a>
+                </p>
+            </div>
+
+        </div>
+        {% endif %}
+
+        <div class="content is-small has-text-centered">
+            <p style="color:whitesmoke;">Intelligent Vision Research Lab. All Rights Reserved.</p>
+            <p class="" style="color:whitesmoke;">Theme built by <a href="https://www.csrhymes.com" style=" color: inherit;">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>

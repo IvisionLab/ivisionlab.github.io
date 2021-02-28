@@ -1,0 +1,69 @@
+<!--jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<section class="hero {% if callouts.height %} {{ callouts.height }} {% else %} is-medium {% endif %} is-white">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10-desktop is-12-mobile">
+          <p class="title is-4"> Support </p>
+          <section>
+            <div class="carousel">
+              <div id="images">
+                <a class="img" href="https://www.ufba.br/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/1.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 1"/>
+                </a>
+                <a class="img" href="http://wiki.dcc.ufba.br/DCC/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/2.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 2"/>
+                </a>
+                <a class="img" href="http://www.ctai.eng.ufba.br/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/3.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 3"/>
+                </a>
+                <a class="img" href="http://wiki.dcc.ufba.br/Mecatronica/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/4.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 4"/>
+                </a>
+                <a class="img" href="http://www.cnpq.br/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/5.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 5"/>
+                </a>
+                <a class="img" href="http://www.fapesb.ba.gov.br/" target="_blank">
+                  <img src="{{ site.baseurl }}/img/slider/6.png" style="object-fit: contain;width:239px;height:239px;" alt="Supporter 6"/>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<script>
+  function slide(){
+    var currImage = $('.img').first(),
+        currImageWidth = currImage.width();
+
+    $imageContainer.animate({right: currImageWidth}, function(){
+      setTimeout(function(){
+        $imageContainer.append(currImage.clone());
+        currImage.remove();
+        $imageContainer.css("right", 0);
+      }, 0);
+    });
+  }
+
+  setInterval(function() {
+    slide();
+  }, 2000);
+
+  // Strip out text nodes otherwise there is a jump when the initial slides are removed.
+  // This is UGLY. Head over to the CSS forum and ask someone who knows what they're doing, how to do this properly
+  //
+  var holder = document.getElementById("images");
+  for (var i =0; i < holder.childNodes.length; i++){
+    if(holder.childNodes[i].nodeType === 3){
+      holder.removeChild(holder.childNodes[i])
+    }
+  }
+
+  var $imageContainer = $("#images");
+</script>

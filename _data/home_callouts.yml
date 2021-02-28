@@ -1,0 +1,15 @@
+style: is-light
+height: is-small
+items:
+  - title: Smart Cities
+    icon: fas fa-city
+    call_to_action_link: /projects/?project=Smart
+  - title: Biometric Systems
+    icon: fas fa-fingerprint
+    call_to_action_link: /projects/?project=Biometric
+  - title: Biomedicine
+    icon: fas fa-microscope
+    call_to_action_link: /projects/?project=Biomedicine
+  - title: Robotics
+    icon: fas fa-robot
+    call_to_action_link: /projects/?project=Robotics
