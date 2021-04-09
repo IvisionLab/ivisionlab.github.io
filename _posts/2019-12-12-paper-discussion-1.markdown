@@ -2,6 +2,7 @@
 layout: post
 title:  "Discussão de artigos #1"
 date:   12-12-2019
+meeting:   12-12-2019
 categories: workshops
 type: paper-discussion
 description: "* The lottery ticket hypothesis: finding sparse, trainable neural networks; * Bag of Tricks for Image Classification with Convolutional Neural Networks"
