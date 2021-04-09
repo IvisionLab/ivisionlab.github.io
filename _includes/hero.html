@@ -6,7 +6,7 @@
                     <p class="title is-2">{{ page.title }}</p>
                     
                     {% if page.published %}<!--adicionei-->
-                    <p class="subtitle is-5"><br/>Data: {{ page.date | date: "%d/%m/%Y" }}</p>
+                    <p class="subtitle is-5"><br/>Data: {{ page.meeting | date: "%d/%m/%Y" }}</p>
                     {% endif %}
                     <p class="subtitle is-3">{{ page.subtitle }}</p>
                     {% if page.hero_link %}
