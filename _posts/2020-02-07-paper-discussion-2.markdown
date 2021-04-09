@@ -2,6 +2,7 @@
 layout: post
 title:  "Discussão de artigos #2"
 date:   07-02-2020
+meeting:   07-02-2020
 categories: workshops
 type: paper-discussion
 description: "* Taskonomy: Disentangling Task Transfer Learning; * On Merging MobileNets for Efficient Multitask Inference"
