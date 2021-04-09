@@ -2,6 +2,7 @@
 layout: post
 title:  "Discussão de artigos #3"
 date:   26-03-2021
+meeting:   26-03-2021
 categories: workshops
 type: paper-discussion
 description: "* What is being transferred in transfer learning?"
