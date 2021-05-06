@@ -26,11 +26,9 @@ Essa mesa redonda propõe uma discussão sobre 1 artigo relevante para a área d
 
     * [**Review information**](https://openreview.net/forum?id=YicbFdNTTy)
 
-<!---
 # Discussão
 
 <iframe style="width:660px;height:415px;"
-    src="https://www.youtube.com/embed/a4XVqBzntUU" 
+    src="https://www.youtube.com/embed/vFH73ivkxcI" 
     allowfullscreen>
 </iframe>
--->
